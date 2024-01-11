@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOES FASHION</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .thankss{
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 75vh;  
+        }
+        header {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        p {
+            font-size: 24px;
+            color: #FF5733;
+            margin-bottom: 10px;
+        }
+
+        strong {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 36px;
+            color: #2E86C1;
+        }
+
+        /* Adding animation  */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        footer {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Apply the animation to the elements */
+        p, strong, h1 {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 style="color: white;">SHOES FASHION</h1>
+    </header>
+    <div class="thankss">
+        <p>YOUR ORDER PLACED SUCCESSFULLY !!!!</p>
+        <strong>VISIT AGAIN  FOR SOME MORE SHOES</strong>
+        <h1>THANK YOU FOR VSITING SHOES FASHION HAVE A NICE DAY :)</h1>
+    </div>
+    
+    <footer>
+        <p style="color: white; font-size: 16px;">&copy; 2024 Shoes Fashion</p>
+    </footer>
+</body>
+</html>

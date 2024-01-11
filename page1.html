@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SHOES FASHION</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-image: url('bg.jpg'); 
+      background-size: cover;
+      background-position: center;
+    }
+
+    .container {
+      width: 40%;
+      background-color: rgba(255, 255, 255, 0.8); 
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    input[type=text], input[type=password] {
+      width: calc(100% - 30px);
+      padding: 15px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    input[type=text]:focus, input[type=password]:focus {
+      background-color: #ddd;
+      outline: none;
+    }
+
+    button {
+      background-color: #04AA6D;
+      color: white;
+      padding: 10px 15px;
+      margin: 8px 0;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      width: 95%;
+      opacity: 0.9;
+      box-sizing: border-box;
+    }
+
+    button:hover {
+      opacity: 1;
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <form action="page2.html" onsubmit="return validateForm()">
+      <h1 style="text-align: center; color: #333;">Sign In</h1>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password (at least 8 characters)" name="psw" id="psw" required>
+
+      <div class="clearfix">
+        <button type="submit">Sign In</button>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    function validateForm() {
+      var email = document.getElementById('email').value;
+      var password = document.getElementById('psw').value;
+
+      // Email format validation
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailRegex.test(email)) {
+        alert("Invalid email format");
+        return false;
+      }
+
+      // Password length validation
+      if (password.length < 8) {
+        alert("Password must be at least 8 characters long");
+        return false;
+      }
+
+      // If all validations pass, redirect to page2.html
+      window.location.href = "page2.html";
+      return false; 
+    }
+  </script>
+
+</body>
+</html>

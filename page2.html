@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOES FASHION</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .card {
+            max-width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .card img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #333;
+            padding: 10px;
+            color: white;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .order-now {
+            background-color: #aa04a7;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SHOES FASHION</h1>
+</header>
+
+<section>
+    <h2>Make A Good Journey With Shoes</h2>
+
+    <div class="product">
+     
+        <div class="card">
+            <img src="Shoe1.jpg" alt="Shoe ">
+            <h3>ANDUNE Men's Shoes</h3>
+            <h4>₹ 2,499</h4>
+            <p>ANDUNE Men's Barefoot & Minimalist Shoes - Black Blaze | Wide Toe Box | Zero Drop Sole </p>
+            <button onclick="orderNow('Shoe 1')" class="order-now">Order Now</button>
+            
+        </div>
+        <div class="card">
+            <img src="Shoe2.jpg" alt="Shoe ">
+            <h3>ASIAN Men's Shoes</h3>
+            <h4>₹ 725</h4>
+            <p>ASIAN Tarzan-11 White Casual Sneaker High-Neck with Lightweight Extra BADLAV Mens Shoes </p>
+            <button onclick="orderNow('Shoe ')" class="order-now">Order Now</button>
+            
+        </div>
+        <div class="card">
+            <img src="Shoe3.jpg" alt="Shoe ">
+            <h3>BADLAV Mens Shoes</h3>
+            <h4>₹ 465</h4>
+            <p>BADLAV Mens Air Force Sneakers for Men|Comfortable Shoes (N-2.0) BADLAV Men's Sneakers </p>
+            <button onclick="orderNow('Shoe ')" class="order-now">Order Now</button>
+            
+        </div>
+        <div class="card">
+            <img src="Shoe4.jpg" alt="Shoe ">
+            <h3>Red Tape Shoes</h3>
+            <h4>₹ 1,619</h4>
+            <p>Red Tape Sneaker Casual for Men Soft Cushion Insole, Dynamic Feet Support & Arch Support </p>
+            <button onclick="orderNow('Shoe ')" class="order-now">Order Now</button>
+            
+        </div>
+        <div class="card">
+            <img src="Shoe5.jpg" alt="Shoe ">
+            <h3>Bacca Bucci Shoes</h3>
+            <h4>₹ 1,199</h4>
+            <p>Bacca Bucci Men's Essential Your Everyday All Purpose Walking Running Casual Shoes for Men </p>
+            <button onclick="orderNow('Shoe ')" class="order-now">Order Now</button>
+            
+        </div>
+
+        
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Shoes Fashion</p>
+</footer>
+
+
+<script>
+    function orderNow(productName) {
+        // Simulate fetching product details
+        var productDetails = {
+            name: productName,
+            description: 'Product description goes here.',
+        };
+
+        // Redirect to the product details page
+        window.location.href = 'page3.html';
+    }
+</script>
+
+</body>
+</html>
